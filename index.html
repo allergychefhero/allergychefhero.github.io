@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <!--Page title and thumbnail-->
+    <title>Allergy Game</title>
+
+    <!--Customizations-->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!--JavaScript links-->
+    <script src="js/index.js"></script>
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <h4 id="title">Pick a buddy!</h4>
+
+      <div id="char-container">
+        <div onclick="charSelect(this)" class="char">
+            <div class="char-name">Shelly</div>
+            IMAGE 1
+            <div class="allergen">Shellfish</div>
+            <div class="food-desc">Seafood Pasta</div>
+        </div>
+
+        <div onclick="charSelect(this)" class="char">
+            <div class="char-name">Nick</div>
+            IMAGE 2
+            <div class="allergen">Nuts</div>
+            <div class="food-desc">Ice Cream Sundae</div>
+        </div>
+
+        <div onclick="charSelect(this)" class="char">
+            <div class="char-name">Dan</div>
+            IMAGE 3
+            <div class="allergen">Dairy</div>
+            <div class="food-desc">Pancakes</div>
+        </div>
+      </div>
+
+      <button id="start-game" onclick="startGame()" disabled>Let's Go!</button>
+
+    </div>
+
+  </body>
+
+</html>

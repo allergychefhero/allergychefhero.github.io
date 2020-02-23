@@ -1,0 +1,34 @@
+body{
+  background-color: #FFFDCC;
+  font-size: 25px;
+  font-family: "Comic Sans MS";
+  color: #070707;
+}
+
+#container{
+  width: 100%;
+  text-align: center;
+}
+
+#char-container{
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.char{
+  margin: 10px;
+  border: 3px dashed #00ffff;
+  display: inline-block;
+}
+
+#start-game{
+  margin-top: 10px;
+  font-size: inherit;
+  background-color: #ccc;
+  border: #707070 1px solid;
+}
+
+.char-name, .food-desc, .allergen{
+  display: none;
+}
