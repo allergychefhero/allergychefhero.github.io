@@ -41,12 +41,14 @@ function charSelect(char){
     if (charSelected){
         charSelected.getElementsByClassName("char-name")[0].style.display = "none";
         charSelected.getElementsByClassName("speech-bubble")[0].style.display = "none";
+        charSelected.getElementsByClassName("char-img")[0].style.width = "100px";
         charSelected.getElementsByClassName("allergen")[0].style.display = "none";
         charSelected.getElementsByClassName("food-desc")[0].style.display = "none";
     }
     charSelected = char;
     char.getElementsByClassName("char-name")[0].style.display = "block";
     char.getElementsByClassName("speech-bubble")[0].style.display = "block";
+    char.getElementsByClassName("char-img")[0].style.width = "120px";
     char.getElementsByClassName("allergen")[0].style.display = "block";
     char.getElementsByClassName("food-desc")[0].style.display = "block";
     activateButton();
