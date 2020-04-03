@@ -55,6 +55,7 @@ function quizProgression() {
     if(choiceSelected){
       choiceSelected.style.backgroundColor = "#ffffff";
       choiceSelected = undefined;
+      document.getElementById('quiz-action-btn').innerHTML="←";
     }
   }
 }
