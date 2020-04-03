@@ -1,0 +1,71 @@
+<html>
+  <head>
+      <!--Page title and thumbnail-->
+      <title>Allergy Game</title>
+
+      <!--Customizations-->
+      <link href="css/recipequizTEMPLATE.css" rel="stylesheet">
+
+      <!--JavaScript links-->
+      <script src="js/recipequizTEMPLATE.js"></script>
+  </head>
+
+  <body>
+
+    <div id="container">
+      <div id="quiz-header">
+
+        <div class="row">
+          <div class="row-item left-itm">
+            <img id="char-img" src="chars/shelley.png" alt="Shelly_char">
+          </div>
+          <div class="row-item right-itm">
+            <h4 id="quiz-heading">Heading with question or thing goes here</h4>
+            My allergy: <strong>ALLERGY</strong>
+          </div>
+        </div>
+      </div>
+
+      <div id="squares-container">
+        <div class="row">
+
+          <!--top left square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              one
+            </div>
+          </div>
+
+          <!--top right square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              two
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--bottom left square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              three
+            </div>
+          </div>
+
+          <!--bottom right square-->
+          <div class="square ct" onclick="selectChoice(this)">
+            <div class="content">
+              four
+            </div>
+          </div>
+        </div>
+      <!--end squares' container-->
+      </div>
+
+      <button id="quiz-action-btn" onclick="quizProgression()">←</button>
+
+    </div>
+
+  </body>
+
+</html>
