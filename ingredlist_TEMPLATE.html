@@ -1,0 +1,68 @@
+<html>
+  <head>
+      <!--Page title and thumbnail-->
+      <title>Allergy Game</title>
+
+      <!--Customizations-->
+      <link href="css/ingredlist_TEMPLATE.css" rel="stylesheet">
+
+      <!--JavaScript links-->
+      <script src="js/ingredlist_TEMPLATE.js"></script>
+  </head>
+
+  <body>
+
+    <div id="container">
+      <div id="quiz-header">
+
+
+          <h4 id="heading-txt">Recipe Title</h4>
+
+        <div class="row">
+          <div class="row-item left-itm">
+            img 1
+          </div>
+          <div class="row-item right-itm">
+            img 2
+          </div>
+        </div>
+      </div>
+
+      <div id="squares-container">
+          <!--top rec-->
+          <div class="rec" onclick="selectChoice(this)">
+            <div class="content">
+              one
+            </div>
+          </div>
+
+          <!--2nd rec-->
+          <div class="rec" onclick="selectChoice(this)">
+            <div class="content">
+              two
+            </div>
+          </div>
+
+          <!--3rd rec-->
+          <div class="rec" onclick="selectChoice(this)">
+            <div class="content">
+              three
+            </div>
+          </div>
+
+          <!--bottom rec-->
+          <div class="rec">
+            <div class="content">
+              four
+            </div>
+          </div>
+      <!--end squares' container-->
+      </div>
+
+      <button id="quiz-action-btn" onclick="quizProgression()">←</button>
+
+    </div>
+
+  </body>
+
+</html>

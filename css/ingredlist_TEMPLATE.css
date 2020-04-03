@@ -1,0 +1,93 @@
+body{
+  background-color: #FFE5BA;
+  font-size: 25px;
+  font-family: "Comic Sans MS";
+  color: #070707;
+}
+
+.right-itm{
+  text-align: left;
+}
+
+.left-itm{
+  text-align: right;
+}
+
+#container{
+  width: 100%;
+  text-align: center;
+}
+
+/*Quiz header container (not text)*/
+#quiz-header{
+  font-size: 20px;
+  width: 65%;
+  height: 20%;
+  overflow: hidden;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+#char-img{
+  height:100%;
+}
+
+/* Quiz heading text*/
+#heading-txt{
+  font-size: 30px;
+  line-height: 1.2em;
+  margin: 0 0 7px 0;
+  text-decoration: underline;
+}
+
+#quiz-action-btn{
+  margin-top: 10px;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: #FFFDCC;
+  border: #707070 1px solid;
+  border-radius: 24px;
+  font-family: inherit;
+  padding: 0 10px;
+  padding-bottom: 3px;
+}
+
+#squares-container{
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+
+}
+
+.row-item {
+  position: relative;
+  padding: 0 25px;
+  width: 50%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.rec {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border: solid #000000 1px;
+  border-radius: 8px;
+}
+
+.rec:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
