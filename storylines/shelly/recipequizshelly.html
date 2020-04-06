@@ -1,0 +1,71 @@
+<html>
+  <head>
+      <!--Page title and thumbnail-->
+      <title>Allergy Game</title>
+
+      <!--Customizations-->
+      <link href="recipequizshelly.css" rel="stylesheet">
+
+      <!--JavaScript links-->
+      <script src="recipequizshelly.js"></script>
+  </head>
+
+  <body>
+
+    <div id="container">
+      <div id="quiz-header">
+
+        <div class="row">
+          <div class="row-item left-itm">
+            <img id="char-img" src="../../chars/shelly.png" alt="Shelly_char" style="min-height:150px;">
+          </div>
+          <div class="row-item right-itm">
+            <h4 id="quiz-heading">Which seafood can I eat?</h4>
+            <span id="allergy-statement">My allergy: <strong>shellfish</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="squares-container">
+        <div class="row">
+
+          <!--top left square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/seafoods/fish.png" alt="Fish" width="100%">
+            </div>
+          </div>
+
+          <!--top right square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/seafoods/crab.png" alt="Crab" width="100%">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--bottom left square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/seafoods/shrimp.png" alt="Shrimp" width="100%">
+            </div>
+          </div>
+
+          <!--bottom right square-->
+          <div class="square ct" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/seafoods/shell_2.png" alt="Clams" width="100%">
+            </div>
+          </div>
+        </div>
+      <!--end squares' container-->
+      </div>
+
+      <button id="quiz-action-btn" onclick="quizProgression()">←</button>
+
+    </div>
+
+  </body>
+
+</html>
