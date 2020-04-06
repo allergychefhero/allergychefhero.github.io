@@ -10,38 +10,55 @@
 <body>
 
   <div id="container">
+    <!--Back button-->
     <a href="../../index.html" class="back-btn">←</a>
+
     <div>
-        <h1><b>Shelly</h1>
-        <h1><img class="center" src="../../chars/shelly.png" alt="Shelly_char" width="100" /></h1>
-        <p>I have a <span><b>shellfish</b></span> allergy<br></p>
-            <hr>
-        <p>I will get <span style="color:#E50714">sick</span> if I eat:</p>
+        <h1 id="name">Shelly</h1>
+        <img src="../../chars/shelly.png" class="center" alt="Picture of Shelly" width="100" />
+        <p>
+          I have a <big><strong>shellfish</strong></big> allergy<br>
+        </p>
+
+        <!--section seperator: line-->
+        <hr>
+
+        <p>
+          I will get <big style="color:#E50714">sick</big> if I eat:
+        </p>
     </div>
-    <div class = flexbox>
-        <section>
+
+    <div class="row">
+        <div class="row-item">
             <img class="center" src="../../sprites/seafoods/crab.png" alt="crab" width="100"/>
             <p>Crab</p>
-        </section>
-        <section>
+        </div>
+
+        <div class="row-item">
             <img class="center" src="../../sprites/seafoods/shrimp.png" alt="crab" width="80" height="75"/>
             <p>Shrimps</p>
-        </section>
-        <section>
+        </div>
+
+        <div class="row-item">
             <img class="center" src="../../sprites/seafoods/shell_2.png" alt="crab" width="110"/>
             <p>Clams</p>
-        </section>
+        </div>
     </div>
-    <div>
-        <br>
-        <p>I <span style="color:#339D2E">can</span> eat:</p>
-        <h1><img class="center" src="../../sprites/seafoods/fish.png" alt="fish" width="100" /></h1>
-        <p>fish</p>
+
+    <div style="margin-top:20px;">
+        <p>
+          I <big style="color:#339D2E">can</big> eat:<br>
+          <img class="center" src="../../sprites/seafoods/fish.png" alt="fish" width="100" />
+          fish
+        </p>
+
         <br>
 
-        <p>Let's make <span><b>seafood pasta</b></span> !
-            <a href="recipequizshelly.html" class="next round">&#62;</a></p>
+        <p>
+          Let's make <big><b>seafood pasta</b></big>! <a href="recipequizshelly.html" class="next round">&#62;</a>
+        </p>
     </div>
+
   </div>
 </body>
 </html>

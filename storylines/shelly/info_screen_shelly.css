@@ -6,13 +6,18 @@ body{
   margin: 0 0;
 }
 
-h1{
+#name{
   font-style: bold;
   text-align: center;
   font-size: 50px;
   padding: 0px;
   margin:0px;
 }
+
+hr{
+    border-color: #707070;
+}
+
 p{
   font-style: normal;
   text-align: center;
@@ -21,8 +26,8 @@ p{
   margin:0px;
 }
 
-span{
-  font-size: 35px
+big{
+  font-size: 35px;
 }
 
 a{
@@ -37,23 +42,23 @@ a{
 }
 
 .center {
-  font-size:0;
+  margin: 0 auto;
   text-align: center;
-  padding:0px;
-  margin:0px;
-  border:0px;
-
+  display: block;
 }
-.flexbox{
+
+.row{
   display:flex;
   flex-wrap:wrap;
   text-align:center;
   margin:auto;
 }
-section {
+
+.row-item {
   flex: 1;
   padding-top: 10px;
 }
+
 button{
   background-color:#B9FD9C;
   width: 100px;

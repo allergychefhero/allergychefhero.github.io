@@ -31,12 +31,12 @@ function charSelect(char){
     charSelected = char;
     charSelected.style.border = "dashed #333 3px";
 
-    if(charSelected.classList.contains('shelley')){
+    if(charSelected.classList.contains('shelly')){
         // change background colors
         speechBubble.style.backgroundColor = "#FFE5BA";
         foodDesc.style.backgroundColor = "#FFE5BA";
         // change text
-        heading.innerHTML = "Shelley";
+        heading.innerHTML = "Shelly";
         speechBubble.innerHTML = "Hi there! Let’s make <strong>seafood pasta!</strong>";
         foodDesc.innerHTML = "<img src='sprites/seafoods/seafoodpasta.png' width='100'><br>Shellfish-Free Seafood Pasta";
     }
