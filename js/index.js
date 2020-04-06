@@ -38,7 +38,7 @@ function charSelect(char){
         // change text
         heading.innerHTML = "Shelley";
         speechBubble.innerHTML = "Hi there! Let’s make <strong>seafood pasta!</strong>";
-        foodDesc.innerHTML = "<img src='sprites/seafoodpasta.png' width='100'><br>Shellfish-Free Seafood Pasta";
+        foodDesc.innerHTML = "<img src='sprites/seafoods/seafoodpasta.png' width='100'><br>Shellfish-Free Seafood Pasta";
     }
 
     else if(charSelected.classList.contains('nick')){
