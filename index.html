@@ -14,32 +14,38 @@
 
     <div id="container">
 
-      <h4 id="title">Pick a buddy!</h4>
+      <h3 id="heading">Pick a Buddy</h3>
+      <div id="speech-bubble">Let's make food!</div>
 
-      <div id="char-container">
-        <div onclick="charSelect(this)" class="char">
-            <div class="char-name">Shelly</div>
-            <div class="speech-bubble">Hi there! Let’s make Seafood Pasta!</div>
-            <img class="char-img" src="chars/shelley.png" width="100">
-            <div class="allergen">Shellfish</div>
-            <div class="food-desc">Seafood Pasta</div>
+      <div id="char-allergen-container">
+        <div class="row">
+          <!--char image-->
+          <div class="row-item shelley" onclick="charSelect(this)">
+            <!--char image-->
+            <img class="char" src="chars/shelley.png" height="180"><br><br>
+            <!--allergen-->
+            <img class="allergen" src="sprites/shellfishallergen.png" height="90">
+          </div>
+
+
+          <div class="row-item nick" onclick="charSelect(this)">
+            <!--char image-->
+            <img class="char" src="chars/nick.png" height="180"><br><br>
+            <!--allergen-->
+            <img class="allergen" src="sprites/nutallergen.png" height="90" style="margin-left: 15px;">
+          </div>
+
+          <div class="row-item dani" onclick="charSelect(this)">
+            <!--char image-->
+            <img class="char" src="chars/dani.png" height="180"><br><br>
+            <!--allergen-->
+            <img class="allergen" src="sprites/dairyallergen.png" height="90">
+          </div>
+
+        <!--end row-->
         </div>
 
-        <div onclick="charSelect(this)" class="char">
-            <div class="char-name">Nick</div>
-            <div class="speech-bubble">Hey! Let’s make an Ice Cream Sundae.</div>
-            <img class="char-img" src="chars/nick.png" width="125">
-            <div class="allergen">Nuts</div>
-            <div class="food-desc">Ice Cream Sundae</div>
-        </div>
-
-        <div onclick="charSelect(this)" class="char">
-            <div class="char-name">Dani</div>
-            <div class="speech-bubble">We can make pancakes together!</div>
-            <img class="char-img" src="chars/dani.png" width="100">
-            <div class="allergen">Dairy</div>
-            <div class="food-desc">Pancakes</div>
-        </div>
+        <div id="food-desc">Desc</div>
       </div>
 
       <button id="start-game" onclick="startGame()" disabled>Let's Go!</button>
@@ -47,5 +53,31 @@
     </div>
 
   </body>
+
+  <!--
+  <div onclick="charSelect(this)" class="char">
+      <div class="char-name">Shelly</div>
+      <div class="speech-bubble">Hi there! Let’s make Seafood Pasta!</div>
+      <img class="char-img" src="chars/shelley.png" width="100">
+      <div class="allergen">Shellfish</div>
+      <div class="food-desc">Seafood Pasta</div>
+  </div>
+
+  <div onclick="charSelect(this)" class="char">
+      <div class="char-name">Nick</div>
+      <div class="speech-bubble">Hey! Let’s make an Ice Cream Sundae.</div>
+      <img class="char-img" src="chars/nick.png" width="125">
+      <div class="allergen">Nuts</div>
+      <div class="food-desc">Ice Cream Sundae</div>
+  </div>
+
+  <div onclick="charSelect(this)" class="char">
+      <div class="char-name">Dani</div>
+      <div class="speech-bubble">We can make pancakes together!</div>
+      <img class="char-img" src="chars/dani.png" width="100">
+      <div class="allergen">Dairy</div>
+      <div class="food-desc">Pancakes</div>
+  </div>
+  -->
 
 </html>

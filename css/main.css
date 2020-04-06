@@ -1,24 +1,36 @@
 body{
   background-color: #FFFDCC;
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Comic Sans MS";
   color: #070707;
 }
 
-#container{
-  width: 100%;
-  text-align: center;
+#heading{
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 15px;
 }
 
-#char-container{
-  width: 95%;
+#container{
+  width: 80%;
   text-align: center;
   margin: 0 auto;
 }
 
-.char{
-  margin: 10px;
-  display: inline-block;
+.row {
+  margin: 15px 0;
+  display: flex;
+  width: 100%;
+}
+
+.row-item {
+  position: relative;
+  width: 33%;
+  padding: 5px;
+}
+
+#char-allergen-container{
+  width: 100%;
 }
 
 #start-game{
@@ -29,11 +41,11 @@ body{
   font-family: inherit;
 }
 
-.char-name, .food-desc, .allergen, .speech-bubble{
-  display: none;
+#food-desc, #speech-bubble{
+  padding: 10px;
+  margin: 20px 0;
 }
 
-.food-desc, .speech-bubble{
-  background-color: #C4ECED;
-  padding: 10px;
+#food-desc{
+  display: none;
 }
