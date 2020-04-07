@@ -84,6 +84,10 @@ body{
   padding-bottom: 100%;
 }
 
+.center-content { 
+  justify-content: center;
+}
+
 .content {
   position: absolute;
   width: 100%;
@@ -167,6 +171,12 @@ body{
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.checkbox:after { 
+  content: " "; 
+  display: block; 
+  clear: both; 
 }
 
 
