@@ -52,6 +52,12 @@ function charSelect(char){
         heading.innerHTML = "Nick";
         speechBubble.innerHTML = "Hey! Let's make an <strong>ice cream sundae</strong>.";
         foodDesc.innerHTML = "<img src='sprites/sundae.png' width='100'><br>Nut-Free Ice Cream Sundae";
+
+        //***!!!***!!!***!!!***IMPORTANT***!!!***!!!***!!!***!!!
+        //*** TAKE OUT 2 LINES BELOW WHEN NICK'S STORYLINE IS READY
+        document.getElementById("start-game").disabled = true;
+        document.getElementById("start-game").style.backgroundColor = "#ccc";
+
     }
 
     else if(charSelected.classList.contains('dani')){
@@ -64,8 +70,11 @@ function charSelect(char){
         foodDesc.innerHTML = "<img src='sprites/pancakes.png' width='100'><br>Dairy-Free Pancakes";
     }
 
-    //char.getElementsByClassName("food-desc")[0].style.display = "block";
-    activateButton();
+    //***!!!***!!!***!!!***IMPORTANT***!!!***!!!***!!!***!!!
+    //*** TAKE OUT 2 LINES BELOW WHEN NICK'S STORYLINE IS READY
+    if (!charSelected.classList.contains('nick')){
+        activateButton();
+    }
 }
 
 //Activates start buttons
