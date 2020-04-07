@@ -14,10 +14,7 @@
 
     <div id="container">
       <div id="quiz-header">
-
-
-          <h4 id="heading-txt">Recipe Title</h4>
-
+		  <h4 id="heading-txt">Recipe Title</h4>
         <div class="row">
           <div class="row-item left-itm">
             img 1
@@ -30,31 +27,67 @@
 
       <div id="squares-container">
           <!--top rec-->
-          <div class="rec" onclick="selectChoice(this)">
-            <div class="content">
-              one
-            </div>
-          </div>
+          <div class="rec"> <!-- onclick="selectChoice(this)"> --> 
+			<div class="row"> 
+				<div class="row-item lg-width"> 
+					ingredient 
+				</div>
+				<div class="row-item sm-width checkbox"> 
+					<label class="checkbox-container">
+						<input type="checkbox" onClick="validate()">
+						<span class="checkmark"></span>
+					</label>
+					<!--<input type="checkbox" id="myCheck" onclick="myFunction()"> --> 
+				</div>
+			</div> 
+          </div> 
 
           <!--2nd rec-->
-          <div class="rec" onclick="selectChoice(this)">
-            <div class="content">
-              two
-            </div>
+          <div class="rec"> 
+			<div class="row"> 
+				<div class="row-item lg-width"> 
+					ingredient 
+				</div>
+				<div class="row-item sm-width checkbox"> 
+					<label class="checkbox-container">
+						<input type="checkbox" onClick="validate()">
+						<span class="checkmark"></span>
+					</label>
+					<!--<input type="checkbox" id="myCheck" onclick="myFunction()"> --> 
+				</div>
+			</div> 
           </div>
 
           <!--3rd rec-->
-          <div class="rec" onclick="selectChoice(this)">
-            <div class="content">
-              three
-            </div>
+          <div class="rec"> 
+			<div class="row"> 
+				<div class="row-item lg-width"> 
+					ingredient 
+				</div>
+				<div class="row-item sm-width checkbox"> 
+					<label class="checkbox-container">
+						<input type="checkbox" onClick="validate()">
+						<span class="checkmark"></span>
+					</label>
+					<!--<input type="checkbox" id="myCheck" onclick="myFunction()"> --> 
+				</div>
+			</div> 
           </div>
 
           <!--bottom rec-->
-          <div class="rec">
-            <div class="content">
-              four
-            </div>
+          <div class="rec"> 
+			<div class="row"> 
+				<div class="row-item lg-width"> 
+					ingredient 
+				</div>
+				<div class="row-item sm-width"> 
+					<label class="checkbox-container">
+						<input type="checkbox" onClick="validate()">
+						<span class="checkmark"></span>
+					</label>
+					<!--<input type="checkbox" id="myCheck" onclick="myFunction()"> -->
+				</div>
+			</div> 
           </div>
       <!--end squares' container-->
       </div>

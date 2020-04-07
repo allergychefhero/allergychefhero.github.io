@@ -50,6 +50,7 @@ body{
   font-family: inherit;
   padding: 0 10px;
   padding-bottom: 3px;
+  display: none;
 }
 
 #squares-container{
@@ -61,8 +62,7 @@ body{
 
 .row-item {
   position: relative;
-  padding: 0 25px;
-  width: 50%;
+  padding: 10px 25px; 
 }
 
 .row {
@@ -72,16 +72,14 @@ body{
 
 .rec {
   position: relative;
-  width: 100%;
-  height: 20%;
+  width: 100%; 
   margin: 10px 0;
   background-color: #ffffff;
   border: solid #000000 1px;
   border-radius: 8px;
 }
 
-.rec:after {
-  content: "";
+.rec:after { 
   display: block;
   padding-bottom: 100%;
 }
@@ -91,3 +89,95 @@ body{
   width: 100%;
   height: 100%;
 }
+
+.lg-width { 
+	width: 90%; 
+}
+
+.sm-width { 
+	width: 10%; 
+}
+
+.row-item .sm-width { 
+	justify-content: center;
+}
+
+.checkbox-container {
+  display: inline-block; 
+  position: relative ;
+  /*padding-left: 35px;
+  margin-bottom: 12px;*/
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #eee; 
+	text-align: center
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: inline-block; 
+	margin-left: 4px; 
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 10px;
+  height: 25px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
