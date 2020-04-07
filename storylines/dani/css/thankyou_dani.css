@@ -1,0 +1,106 @@
+body{
+  background-color: #C4ECED;
+  font-family: "Comic Sans MS";
+  color: #070707;
+  align-self: center;
+  margin: 0 0;
+}
+
+#name{
+  font-style: bold;
+  text-align: center;
+  font-size: 50px;
+  padding: 0px;
+  margin:0px;
+}
+
+hr{
+    border-color: #707070;
+}
+
+p{
+  font-style: normal;
+  text-align: center;
+  font-size: 25px;
+  padding: 0px;
+  margin:0px;
+}
+
+big{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#container{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  text-align:center;
+  margin:auto;
+}
+
+.row-item {
+  flex: 1;
+  padding-top: 10px;
+}
+
+button{
+  background-color:#B9FD9C;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  float: right;
+}
+
+.next {
+  background-color: #B9FD9C;
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 8px 18px;
+}
+
+  
+  .back-btn{
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #FFFDCC;
+    border: #707070 1px solid;
+    border-radius: 24px;
+    font-family: inherit;
+    padding: 0 10px;
+    padding-bottom: 5px;
+    width: 200px;
+    height: auto;
+    
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+  
+  span{
+      color: #57B82D;
+      font-style: italic;
+      font-size: 50px;
+  }
+
+  
