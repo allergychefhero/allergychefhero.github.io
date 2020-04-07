@@ -49,6 +49,21 @@ body{
   font-family: inherit;
   padding: 0 10px;
   padding-bottom: 3px;
+  display: none;
+}
+
+.back-btn{
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  background-color: #FFFDCC;
+  border: #707070 1px solid;
+  border-radius: 24px;
+  font-family: inherit;
+  padding: 0 10px;
+  float: left;
+  padding-bottom: 5px;
 }
 
 #squares-container{
