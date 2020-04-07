@@ -1,0 +1,73 @@
+<html>
+  <head>
+      <!--Page title and thumbnail-->
+      <title>Allergy Game</title>
+
+      <!--Customizations-->
+      <link href="css/recipequiz_dani.css" rel="stylesheet">
+
+      <!--JavaScript links-->
+      <script src="js/recipequiz_dani.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+
+      <a href="infoscreen_dani.html" class="back-btn">←</a>
+
+      <div id="quiz-header">
+
+        <div class="row">
+          <div class="row-item left-itm">
+            <img id="char-img" src="../../chars/dani.png" alt="Shelly_char">
+          </div>
+          <div class="row-item right-itm">
+            <h4 id="quiz-heading">Which milk can I drink?</h4>
+            My allergy: <strong>Dairy</strong>
+          </div>
+        </div>
+      </div>
+
+      <div id="squares-container">
+        <div class="row">
+
+          <!--top left square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/dairy/chocmilk.png" height="70%" alt="chocolate dairy milk">
+            </div>
+          </div>
+
+          <!--top right square-->
+          <div class="square ct" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/dairy/almondmilk.png" height="70%" alt="almond milk">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--bottom left square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/dairy/strawberrymilk.png" height="70%" alt="strawberry dairy milk">
+            </div>
+          </div>
+
+          <!--bottom right square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/dairy/dairymilk.png" height="70%" alt="plain dairy milk">
+            </div>
+          </div>
+        </div>
+      <!--end squares' container-->
+      </div>
+
+      <button id="quiz-action-btn" onclick="quizProgression()"></button>
+
+    </div>
+
+  </body>
+
+</html>
