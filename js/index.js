@@ -2,10 +2,19 @@
     let charSelected;
 
 function startGame() {
-    // clears elements on page
-    let div = document.getElementById('container');
-    while(div.firstChild){
-      div.removeChild(div.firstChild);
+    // Shelly storyline
+    if(charSelected.classList.contains('shelly')){
+        window.location="storylines/shelly/infoscreen_shelly.html";
+    }
+
+    // Nick storyline
+    if(charSelected.classList.contains('nick')){
+        window.location="storylines/nick/infoscreen_nick.html";
+    }
+
+    // Dani storyline
+    if(charSelected.classList.contains('dani')){
+        window.location="storylines/dani/infoscreen_dani.html";
     }
 }
 
@@ -19,15 +28,9 @@ function charSelect(char){
     // if a character is already selected
     if (charSelected){
         charSelected.style.border="none";
-    //     charSelected.getElementsByClassName("char-name")[0].style.display = "none";
-    //     charSelected.getElementsByClassName("speech-bubble")[0].style.display = "none";
-    //     charSelected.getElementsByClassName("char-img")[0].style.width = "100px";
-    //     charSelected.getElementsByClassName("allergen")[0].style.display = "none";
-    //     charSelected.getElementsByClassName("food-desc")[0].style.display = "none";
-    //
     }
-    foodDesc.style.display = "block";
 
+    foodDesc.style.display = "block";
     charSelected = char;
     charSelected.style.border = "dashed #333 3px";
 

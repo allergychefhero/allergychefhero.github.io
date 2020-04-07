@@ -30,10 +30,12 @@ function selectChoice(choice){
 }
 
 function tryAgain(){
+  document.getElementById('quiz-action-btn').style.display = "inline-block";
   document.getElementById('quiz-action-btn').innerHTML="Try Again <big>↺</big>";
 }
 
 function finishQuiz() {
+  document.getElementById('quiz-action-btn').style.display = "inline-block";
   document.getElementById('quiz-action-btn').innerHTML="Start! >";
   document.getElementById('quiz-action-btn').style.backgroundColor = "#B9FD9C";
 }
@@ -41,21 +43,16 @@ function finishQuiz() {
 //Activates start buttons
 function quizProgression() {
   let btnText = document.getElementById('quiz-action-btn').innerHTML;
-  console.log(btnText);
-  //if quiz completed successfully
-  if(btnText == 'Start! &gt;' || btnText == '←'){
-    //Clear page contents to prepare for next story page
-    let div = document.getElementById('container');
-    while(div.firstChild){
-      div.removeChild(div.firstChild);
+  // if next screen button pressed once quiz completed
+  if(btnText == 'Start! &gt;'){
+    window.location='ingredlist_CHARNAME.html';
     }
-  }
   //if try again-- wrong choice
   else{
     if(choiceSelected){
       choiceSelected.style.backgroundColor = "#ffffff";
       choiceSelected = undefined;
-      document.getElementById('quiz-action-btn').innerHTML="←";
+      document.getElementById('quiz-action-btn').style.display = "none";
     }
   }
 }

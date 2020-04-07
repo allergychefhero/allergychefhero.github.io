@@ -28,6 +28,7 @@ p{
 
 big{
   font-size: 35px;
+  font-weight: bold;
 }
 
 a{
@@ -70,8 +71,8 @@ button{
 }
 
 .next {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #B9FD9C;
+  border: 1px solid #707070;
   display: inline-block;
   padding: 8px 18px;
 }
