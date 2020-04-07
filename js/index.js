@@ -40,7 +40,7 @@ function charSelect(char){
         foodDesc.style.backgroundColor = "#FFE5BA";
         // change text
         heading.innerHTML = "Shelly";
-        speechBubble.innerHTML = "Hi there! Let’s make <strong>seafood pasta!</strong>";
+        speechBubble.innerHTML = "Hi there! Let's make <strong>seafood pasta!</strong>";
         foodDesc.innerHTML = "<img src='sprites/seafoods/seafoodpasta.png' width='100'><br>Shellfish-Free Seafood Pasta";
     }
 
@@ -50,7 +50,7 @@ function charSelect(char){
         foodDesc.style.backgroundColor = "#CEEDCF";
         // change text
         heading.innerHTML = "Nick";
-        speechBubble.innerHTML = "Hey! Let’s make an <strong>ice cream sundae</strong>.";
+        speechBubble.innerHTML = "Hey! Let's make an <strong>ice cream sundae</strong>.";
         foodDesc.innerHTML = "<img src='sprites/sundae.png' width='100'><br>Nut-Free Ice Cream Sundae";
     }
 
