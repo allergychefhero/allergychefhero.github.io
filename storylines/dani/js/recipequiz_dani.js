@@ -1,15 +1,6 @@
 // globals
     let choiceSelected;
 
-function startGame() {
-    // clears elements on page
-    let div = document.getElementById('container');
-    while(div.firstChild){
-      div.removeChild(div.firstChild);
-    }
-}
-
-
 function selectChoice(choice){
     const ct = choice.classList.contains("ct");
 
