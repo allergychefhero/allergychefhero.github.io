@@ -4,13 +4,16 @@
       <title>Allergy Game</title>
 
       <!--Customizations-->
-      <link href="css/recipequiz_dani.css" rel="stylesheet">
+      <link href="../../css/recipequiz.css" rel="stylesheet">
 
       <!--JavaScript links-->
-      <script src="js/recipequiz_dani.js"></script>
+      <script src="../../js/recipequiz.js"></script>
   </head>
 
-  <body>
+  <body style="background-color:#C4ECED;" onload="getHeading()">
+
+    <span id="name" class="dani"></span>
+
     <div id="container">
 
       <!--back button-->
@@ -35,14 +38,14 @@
           <!--top left square-->
           <div class="square" onclick="selectChoice(this)">
             <div class="content">
-              <img src="../../sprites/dairy/chocmilk.png" height="70%" alt="chocolate dairy milk">
+              <img src="../../sprites/dairy/chocmilk.png" height="100%" alt="chocolate dairy milk">
             </div>
           </div>
 
           <!--top right square-->
           <div class="square ct" onclick="selectChoice(this)">
             <div class="content">
-              <img src="../../sprites/dairy/almondmilk.png" height="70%" alt="almond milk">
+              <img src="../../sprites/dairy/almondmilk.png" height="100%" alt="almond milk">
             </div>
           </div>
         </div>
@@ -51,14 +54,14 @@
           <!--bottom left square-->
           <div class="square" onclick="selectChoice(this)">
             <div class="content">
-              <img src="../../sprites/dairy/strawberrymilk.png" height="70%" alt="strawberry dairy milk">
+              <img src="../../sprites/dairy/strawberrymilk.png" height="100%" alt="strawberry dairy milk">
             </div>
           </div>
 
           <!--bottom right square-->
           <div class="square" onclick="selectChoice(this)">
             <div class="content">
-              <img src="../../sprites/dairy/dairymilk.png" height="70%" alt="plain dairy milk">
+              <img src="../../sprites/dairy/dairymilk.png" height="100%" alt="plain dairy milk">
             </div>
           </div>
         </div>

@@ -4,13 +4,15 @@
       <title>Allergy Game</title>
 
       <!--Customizations-->
-      <link href="recipequiz_shelly.css" rel="stylesheet">
+      <link href="../../css/recipequiz.css" rel="stylesheet">
 
       <!--JavaScript links-->
-      <script src="recipequiz_shelly.js"></script>
+      <script src="../../js/recipequiz.js"></script>
   </head>
 
-  <body>
+  <body style="background-color:#FFE5BA" onload="getHeading()">
+
+    <span id="name" class="shelly"></span>
 
     <div id="container">
 
@@ -36,14 +38,14 @@
           <!--top left square-->
           <div class="square ct" onclick="selectChoice(this)">
             <div class="content">
-              <img src="../../sprites/seafoods/fish.png" alt="Fish" width="100%">
+              <img src="../../sprites/seafoods/fish.png" alt="Fish" style="max-height:100%; max-width:100%;">
             </div>
           </div>
 
           <!--top right square-->
           <div class="square" onclick="selectChoice(this)">
             <div class="content">
-              <img src="../../sprites/seafoods/crab.png" alt="Crab" width="100%">
+              <img src="../../sprites/seafoods/crab.png" alt="Crab" style="max-height:100%; max-width:100%;">
             </div>
           </div>
         </div>
@@ -52,14 +54,14 @@
           <!--bottom left square-->
           <div class="square" onclick="selectChoice(this)">
             <div class="content">
-              <img src="../../sprites/seafoods/shrimp.png" alt="Shrimp" width="100%">
+              <img src="../../sprites/seafoods/shrimp.png" alt="Shrimp" style="max-height:100%; max-width:100%;">
             </div>
           </div>
 
           <!--bottom right square-->
           <div class="square" onclick="selectChoice(this)">
             <div class="content">
-              <img src="../../sprites/seafoods/shell_2.png" alt="Clams" width="100%">
+              <img src="../../sprites/seafoods/shell_2.png" alt="Clams" style="max-height:100%; max-width:100%;">
             </div>
           </div>
         </div>

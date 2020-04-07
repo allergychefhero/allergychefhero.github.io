@@ -10,10 +10,14 @@
       <script src="js/recipequiz_TEMPLATE.js"></script>
   </head>
 
-  <body>
+  <body style="background-color:#COLORHEX">
+
+    <!-- JS file uses this element to get the char's name for linking -->
+    <span id="name" class="CHAR_NAME" onload="getHeading()"></span>
 
     <div id="container">
 
+      <!-- back button -->
       <a href="../../infoscreen_CHARNAME.html" class="back-btn">←</a>
 
       <div id="quiz-header">
