@@ -27,12 +27,12 @@ function charSelect(char){
 
     // if a character is already selected
     if (charSelected){
-        charSelected.style.border="none";
+        charSelected.style.borderColor="TRANSPARENT";
     }
 
     foodDesc.style.display = "block";
     charSelected = char;
-    charSelected.style.border = "dashed #333 3px";
+    charSelected.style.borderColor = "#070707";
 
     if(charSelected.classList.contains('shelly')){
         // change background colors
@@ -41,7 +41,7 @@ function charSelect(char){
         // change text
         heading.innerHTML = "Shelly";
         speechBubble.innerHTML = "Hi there! Let's make <strong>seafood pasta!</strong>";
-        foodDesc.innerHTML = "<img src='sprites/seafoods/seafoodpasta.png' width='100'><br>Shellfish-Free Seafood Pasta";
+        foodDesc.innerHTML = "<img src='sprites/seafoods/seafoodpasta.png' height='100'>";
     }
 
     else if(charSelected.classList.contains('nick')){
@@ -51,7 +51,7 @@ function charSelect(char){
         // change text
         heading.innerHTML = "Nick";
         speechBubble.innerHTML = "Hey! Let's make an <strong>ice cream sundae</strong>.";
-        foodDesc.innerHTML = "<img src='sprites/sundae.png' width='100'><br>Nut-Free Ice Cream Sundae";
+        foodDesc.innerHTML = "<img src='sprites/sundae.png' height='100'>";
 
         //***!!!***!!!***!!!***IMPORTANT***!!!***!!!***!!!***!!!
         //*** TAKE OUT 2 LINES BELOW WHEN NICK'S STORYLINE IS READY
@@ -67,7 +67,7 @@ function charSelect(char){
         // change text
         heading.innerHTML = "Dani";
         speechBubble.innerHTML = "We can make <strong>pancakes</strong> together!";
-        foodDesc.innerHTML = "<img src='sprites/pancakes.png' width='100'><br>Dairy-Free Pancakes";
+        foodDesc.innerHTML = "<img src='sprites/dairy/pancakes.png' height='100'>";
     }
 
     //***!!!***!!!***!!!***IMPORTANT***!!!***!!!***!!!***!!!
