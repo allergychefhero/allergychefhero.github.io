@@ -12,7 +12,6 @@ function validate() {
 		} 
 	}
 	if(checked==chks.length) { 
-		console.log("WOOPEEE") 
 		nextPage(); 
 	}
 }
@@ -23,10 +22,12 @@ function nextPage(){
   document.getElementById('quiz-action-btn').style.backgroundColor = "#B9FD9C";
 }
 
-
+function next() {
+  location.replace("thankyou_dani.html")
+}
 
 //Activates start buttons
-function quizProgression() {
+/* function quizProgression() {
   let btnText = document.getElementById('quiz-action-btn').innerHTML; 
   //if quiz completed successfully
   if(btnText == 'Start! &gt;' || btnText == '←'){
@@ -44,4 +45,4 @@ function quizProgression() {
       document.getElementById('quiz-action-btn').innerHTML="←";
     }
   }
-}
+} */

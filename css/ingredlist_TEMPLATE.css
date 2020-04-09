@@ -5,6 +5,11 @@ body{
   color: #070707;
 }
 
+p { 
+  padding: 0;
+  margin: 0;
+}
+
 .right-itm{
   text-align: left;
 }
@@ -21,15 +26,14 @@ body{
 /*Quiz header container (not text)*/
 #quiz-header{
   font-size: 20px;
-  width: 65%;
-  height: 20%;
+  width: 65%; 
   overflow: hidden;
   vertical-align: middle;
   margin: 0 auto;
 }
 
-#char-img{
-  height:100%;
+.char-img{
+  max-height:100%;
 }
 
 /* Quiz heading text*/
@@ -63,11 +67,16 @@ body{
 .row-item {
   position: relative;
   padding: 10px 25px; 
+  height: 100%; 
 }
 
 .row {
   display: flex;
-  width: 100%;
+  width: 100%; 
+}
+
+.column { 
+  height: 150px;
 }
 
 .rec {
@@ -86,16 +95,17 @@ body{
 
 .center-content { 
   justify-content: center;
+  padding: 2em 0 2em 0;
 }
 
 .content {
   position: absolute;
   width: 100%;
-  height: 100%;
 }
 
 .lg-width { 
-	width: 90%; 
+  width: 90%; 
+  text-align: left;
 }
 
 .sm-width { 
@@ -133,7 +143,7 @@ body{
   left: 0;
   height: 40px;
   width: 40px;
-  background-color: #eee; 
+  background-color: rgb(238, 238, 238); 
 	text-align: center
 }
 
@@ -144,7 +154,7 @@ body{
 
 /* When the checkbox is checked, add a blue background */
 .checkbox-container input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: rgb(196, 200, 204);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -157,7 +167,9 @@ body{
 /* Show the checkmark when checked */
 .checkbox-container input:checked ~ .checkmark:after {
   display: inline-block; 
-	margin-left: 4px; 
+  margin-left: 4px; 
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /* Style the checkmark/indicator */
@@ -166,8 +178,8 @@ body{
   top: 5px;
   width: 10px;
   height: 25px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
+  border: solid rgb(11, 197, 58);
+  border-width: 0 5px 5px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);

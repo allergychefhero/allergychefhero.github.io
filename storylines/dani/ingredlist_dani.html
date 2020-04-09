@@ -4,35 +4,38 @@
       <title>Allergy Game</title>
 
       <!--Customizations-->
-      <link href="css/ingredlist_TEMPLATE.css" rel="stylesheet">
+      <link href="../../css/ingredlist_TEMPLATE.css" rel="stylesheet">
 
       <!--JavaScript links-->
-      <script src="js/ingredlist_TEMPLATE.js"></script>
+      <script src="../../js/ingredlist_TEMPLATE.js"></script>
   </head>
 
   <body>
 
     <div id="container">
       <div id="quiz-header">
-		  <h4 id="heading-txt">Recipe Title</h4>
-        <div class="row center-content"> 
+		  <h4 id="heading-txt">Ice Cream Sundae</h4>
+        <div class="row center-content">
 		  <div class="column" style="width: 100%;">
-			img 1 
-            <img src="" class="char-img"> 
+			<!-- img 1 --> 
+            <img src="../../sprites/sundae.png" class="char-img"> 
           </div>
-		  <div class="column" style="width: 100%;">
-			img 2
-            <img src="" class="char-img"> 
+		  <div class="column" style="width: 100%;"> 
+			<!-- img 2 --> 
+            <img src="../../sprites/nuts/nutallergen.png" class="char-img"> 
           </div>
         </div>
-      </div>
+	  </div>
+	  
 
-      <div id="squares-container">
+      <div id="squares-container" style="padding-top: 10px;">
           <!--top rec-->
           <div class="rec"> 
 			<div class="row"> 
 				<div class="row-item lg-width"> 
-					ingredient 
+					<p>ICE CREAM
+						<img src="../../sprites/nuts/ice_cream.PNG" alt="ice cream" style="max-height: 35px; padding: 0 0 0 0;">
+					</p> 
 				</div>
 				<div class="row-item sm-width checkbox"> 
 					<label class="checkbox-container">
@@ -47,7 +50,16 @@
           <div class="rec"> 
 			<div class="row"> 
 				<div class="row-item lg-width"> 
-					ingredient 
+					<!-- <div class="column" style="width: 100%; background-color: #cccccc;"> 
+						<p>SEAFOOD</p> 
+					</div>
+					<div class="column" style="width: 100%; background-color: #cccccc;"> 
+						<img src="../../sprites/seafoods/fish.png" alt="fish" style="max-width: 10%;"> 
+					</div> --> 
+					<p>TOPPINGS 
+						<img src="../../sprites/nuts/nutfree_candy.png" alt="gummy bears" style="max-height: 35px; padding: 0 0 0 0;"> 
+					</p> 
+					
 				</div>
 				<div class="row-item sm-width checkbox"> 
 					<label class="checkbox-container">
@@ -62,7 +74,9 @@
           <div class="rec"> 
 			<div class="row"> 
 				<div class="row-item lg-width"> 
-					ingredient 
+					<p>CHOCOLATE SYRUP
+						<img src="../../sprites/nuts/choc_syrup.PNG" alt="chocolate syrup" style="max-height: 35px; padding: 0 0 0 0;">
+					</p> 
 				</div>
 				<div class="row-item sm-width checkbox"> 
 					<label class="checkbox-container">
@@ -77,7 +91,9 @@
           <div class="rec"> 
 			<div class="row"> 
 				<div class="row-item lg-width"> 
-					ingredient 
+					<p>BANANA
+						<img src="../../sprites/nuts/banana.png" alt="banana" style="max-height: 35px; padding: 0 0 0 0;">
+					</p> 
 				</div>
 				<div class="row-item sm-width"> 
 					<label class="checkbox-container">
@@ -90,7 +106,7 @@
       <!--end squares' container-->
       </div>
 
-      <button id="quiz-action-btn" onclick="quizProgression()">←</button>
+      <button id="quiz-action-btn" onclick="next()">←</button>
 
     </div>
 
