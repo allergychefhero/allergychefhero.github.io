@@ -16,33 +16,14 @@ function validate() {
 	}
 }
 
-function nextPage(){
+function nextPage() {
 	document.getElementById('quiz-action-btn').style.display="inline-block";
-  document.getElementById('quiz-action-btn').innerHTML="DONE";
-  document.getElementById('quiz-action-btn').style.backgroundColor = "#B9FD9C";
+	document.getElementById('quiz-action-btn').innerHTML="DONE";
+	document.getElementById('quiz-action-btn').style.backgroundColor = "#B9FD9C";
 }
 
-function next() {
-  location.replace("thankyou_dani.html")
+function next() { 
+  next_page_str ='thankyou_'.concat(document.getElementById('name').className,'.html');
+  location.replace(next_page_str); 
 }
 
-//Activates start buttons
-/* function quizProgression() {
-  let btnText = document.getElementById('quiz-action-btn').innerHTML; 
-  //if quiz completed successfully
-  if(btnText == 'Start! &gt;' || btnText == '←'){
-    //Clear page contents to prepare for next story page
-    let div = document.getElementById('container');
-    while(div.firstChild){
-      div.removeChild(div.firstChild);
-    }
-  }
-  //if try again-- wrong choice
-  else{
-    if(choiceSelected){
-      choiceSelected.style.backgroundColor = "#ffffff";
-      choiceSelected = undefined;
-      document.getElementById('quiz-action-btn').innerHTML="←";
-    }
-  }
-} */

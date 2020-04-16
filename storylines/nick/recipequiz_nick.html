@@ -1,0 +1,77 @@
+<html>
+  <head>
+      <!--Page title and thumbnail-->
+      <title>Allergy Game</title>
+
+      <!--Customizations-->
+      <link href="../../css/recipequiz.css" rel="stylesheet">
+
+      <!--JavaScript links-->
+      <script src="../../js/recipequiz.js"></script>
+  </head>
+
+  <body style="background-color:#DFFFE0" onload="getHeading()">
+
+    <span id="name" class="nick"></span>
+
+    <div id="container">
+
+      <!--back button-->
+      <a href="infoscreen_nick.html" class="back-btn">←</a>
+
+      <div id="quiz-header">
+
+        <div class="row">
+          <div class="row-item left-itm">
+            <img id="char-img" src="../../chars/nick.png" alt="Nick's character image" style="min-height:150px;">
+          </div>
+          <div class="row-item right-itm">
+            <h4 id="quiz-heading">Which topping can I eat?</h4>
+            <span id="allergy-statement">My allergy: <strong>nuts</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="squares-container">
+        <div class="row">
+
+          <!--top left square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/nuts/chocolate.PNG" alt="chocolate with nuts" style="max-height:100%; max-width:100%;">
+            </div>
+          </div>
+
+          <!--top right square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/nuts/pistachio.PNG" alt="Crab" style="max-height:100%; max-width:100%;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--bottom left square-->
+          <div class="square ct" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/nuts/nutfree_candy.png" alt="gummy bears" style="max-height:100%; max-width:100%; margin-top: auto; margin-bottom: auto;">
+            </div>
+          </div>
+
+          <!--bottom right square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/nuts/almonds.png" alt="almonds" style="max-height:100%; max-width:100%;">
+            </div>
+          </div>
+        </div>
+      <!--end squares' container-->
+      </div>
+
+      <button id="quiz-action-btn" onclick="quizProgression()"></button>
+
+    </div>
+
+  </body>
+
+</html>

@@ -46,18 +46,12 @@ function charSelect(char){
 
     else if(charSelected.classList.contains('nick')){
         // change background colors
-        speechBubble.style.backgroundColor = "#CEEDCF";
-        foodDesc.style.backgroundColor = "#CEEDCF";
+        speechBubble.style.backgroundColor = "#DFFFE0";
+        foodDesc.style.backgroundColor = "#DFFFE0";
         // change text
         heading.innerHTML = "Nick";
         speechBubble.innerHTML = "Hey! Let's make an <strong>ice cream sundae</strong>.";
         foodDesc.innerHTML = "<img src='sprites/sundae.png' height='100'>";
-
-        //***!!!***!!!***!!!***IMPORTANT***!!!***!!!***!!!***!!!
-        //*** TAKE OUT 2 LINES BELOW WHEN NICK'S STORYLINE IS READY
-        document.getElementById("start-game").disabled = true;
-        document.getElementById("start-game").style.backgroundColor = "#ccc";
-
     }
 
     else if(charSelected.classList.contains('dani')){
@@ -69,12 +63,7 @@ function charSelect(char){
         speechBubble.innerHTML = "We can make <strong>pancakes</strong> together!";
         foodDesc.innerHTML = "<img src='sprites/dairy/pancakes.png' height='100'>";
     }
-
-    //***!!!***!!!***!!!***IMPORTANT***!!!***!!!***!!!***!!!
-    //*** TAKE OUT 2 LINES BELOW WHEN NICK'S STORYLINE IS READY
-    if (!charSelected.classList.contains('nick')){
-        activateButton();
-    }
+    activateButton();
 }
 
 //Activates start buttons
