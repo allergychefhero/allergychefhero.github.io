@@ -16,25 +16,26 @@ body{
   text-align: center;
   margin: 0 auto;
 }
-
+/*
 .row {
   margin: 15px 0;
   display: flex;
   width: 100%;
-}
+}*/
 
-.row-item {
+.row-item{
+  border-bottom: solid TRANSPARENT 5px;
+  border-top: solid TRANSPARENT 5px;
+
+}
+/*.row-item {
   position: relative;
   width: 33%;
   padding: 5px;
   border-bottom: solid TRANSPARENT 5px;
   border-top: solid TRANSPARENT 5px;
   padding: 15px 0;
-}
-
-#char-allergen-container{
-  width: 100%;
-}
+}*/
 
 #start-game{
   margin-top: 10px;
