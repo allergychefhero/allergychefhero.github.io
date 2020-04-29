@@ -68,12 +68,13 @@ p {
   position: relative;
   padding: 10px 25px; 
   height: 100%; 
+  position: right;
 }
 
 .row {
   display: flex;
   width: 100%; 
-}
+} 
 
 .column { 
   height: 150px;
