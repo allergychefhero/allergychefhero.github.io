@@ -1,0 +1,77 @@
+<html>
+  <head>
+      <!--Page title and thumbnail-->
+      <title>Allergy Game</title>
+
+      <!--Customizations-->
+      <link href="../../css/recipequiz.css" rel="stylesheet">
+
+      <!--JavaScript links-->
+      <script src="../../js/recipequiz.js"></script>
+  </head>
+
+  <body style="background-color:#FFE5BA" onload="getHeading()">
+
+    <span id="name" class="shelly"></span>
+
+    <div id="container">
+
+      <!--back button-->
+      <a href="infoscreen_shelly.html" class="back-btn">←</a>
+
+      <div id="quiz-header">
+
+        <div class="row">
+          <div class="row-item left-itm">
+            <img id="char-img" src="../../chars/shelly.png" alt="Shelly's character image" style="min-height:150px;">
+          </div>
+          <div class="row-item right-itm">
+            <h4 id="quiz-heading">Which seafood can I eat?</h4>
+            <span id="allergy-statement">My allergy: <strong>shellfish</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="squares-container">
+        <div class="row">
+
+          <!--top left square-->
+          <div class="square ct" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/seafoods/fish.gif" alt="Fish" style="max-height:100%; max-width:100%;">
+            </div>
+          </div>
+
+          <!--top right square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/seafoods/crab.gif" alt="Crab" style="max-height:100%; max-width:100%;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--bottom left square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/seafoods/shrimp.gif" alt="Shrimp" style="max-height:100%; max-width:100%;">
+            </div>
+          </div>
+
+          <!--bottom right square-->
+          <div class="square" onclick="selectChoice(this)">
+            <div class="content">
+              <img src="../../sprites/seafoods/shell_2.gif" alt="Clams" style="max-height:100%; max-width:100%;">
+            </div>
+          </div>
+        </div>
+      <!--end squares' container-->
+      </div>
+
+      <button id="quiz-action-btn" onclick="quizProgression()"></button>
+
+    </div>
+
+  </body>
+
+</html>

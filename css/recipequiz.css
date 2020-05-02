@@ -1,40 +1,12 @@
 body{
   font-size: 25px;
-  font-family: "Comic Sans MS";
+  font-family: "Comic Sans MS" !important;
   color: #070707;
-}
-
-.right-itm{
-  width: 60%;
-  text-align: left;
-}
-
-.left-itm{
-  width: 40%;
-  text-align: right;
-}
-
-#container{
-  width: 100%;
-  text-align: center;
-}
-
-/*Quiz header container (not text)*/
-#quiz-header{
-  font-size: 20px;
-  width: 65%;
-  vertical-align: middle;
-  margin: 0 auto;
-}
-
-#char-img{
-  height:100%;
 }
 
 /* Quiz heading text*/
 #quiz-heading{
-  font-size: 30px;
-  line-height: 1.2em;
+  font-size: 1.5em;
   margin: 0px;
 }
 
@@ -61,49 +33,42 @@ body{
   border-radius: 24px;
   font-family: inherit;
   padding: 0 10px;
-  float: left;
   padding-bottom: 5px;
 }
 
 #squares-container{
   text-align: center;
-  width: 65%;
+  width: 85%;
   margin: 0 auto;
 
 }
 
-.row-item {
-  position: relative;
-  padding: 0 25px;
-}
-
-.row {
-  display: flex;
-  width: 100%;
-}
-
 .square {
-  position: relative;
-  width: 50%;
-  margin: 10px;
   background-color: #ffffff;
   border: solid #000000 1px;
   border-radius: 8px;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.square:after {
+ /* sm col size and below */
+@media (max-width: 767.98px) {
+  .square {
+    padding-bottom: 50%;
+  }
+}
+
+/* md col size and above */
+@media (min-width: 768px) {
+  .square {
+    padding-bottom: 23%;
+  }
+}
+
+
+/*.square:after {
   content: "";
   display: block;
   padding-bottom: 100%;
-}
-
-.content {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
+}*/
