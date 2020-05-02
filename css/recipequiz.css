@@ -4,6 +4,11 @@ body{
   color: #070707;
 }
 
+a{
+  text-decoration:none !important;
+  color: inherit !important;
+}
+
 /* Quiz heading text*/
 #quiz-heading{
   font-size: 1.5em;
@@ -11,9 +16,10 @@ body{
 }
 
 #quiz-action-btn{
-  margin-top: 10px;
+  margin: 10px 0;
   font-size: inherit;
   font-weight: bold;
+  text-align: center;
   background-color: #FFFDCC;
   border: #707070 1px solid;
   border-radius: 24px;
@@ -26,8 +32,6 @@ body{
 .back-btn{
   font-size: 25px;
   font-weight: bold;
-  color: #000;
-  text-decoration: none;
   background-color: #FFFDCC;
   border: #707070 1px solid;
   border-radius: 24px;
@@ -63,6 +67,9 @@ body{
 @media (min-width: 768px) {
   .square {
     padding-bottom: 23%;
+  }
+  .back-btn {
+    position:absolute;
   }
 }
 

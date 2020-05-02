@@ -1,10 +1,14 @@
 <html>
   <head>
-      <!--Page title and thumbnail-->
-      <title>Allergy Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Page title and thumbnail-->
+    <title>Allergy Game</title>
 
-      <!--Customizations-->
-      <link href="../../css/recipequiz.css" rel="stylesheet">
+    <!--Customizations-->
+    <link href="../../css/recipequiz.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
       <!--JavaScript links-->
       <script src="../../js/recipequiz.js"></script>
@@ -14,61 +18,50 @@
 
     <span id="name" class="dani"></span>
 
-    <div id="container">
-
+    <!-- Body container -->
+    <div class="container mt-md-3">
       <!--back button-->
       <a href="infoscreen_dani.html" class="back-btn">←</a>
 
-      <div id="quiz-header">
-
-        <div class="row">
-          <div class="row-item left-itm">
-            <img id="char-img" src="../../chars/dani.png" alt="Shelly_char">
+      <!-- Heading container -->
+      <div class="container">
+        <div class="row justify-content-center mb-2">
+          <div class="col col-md-2">
+            <center><img id="char-img" src="../../chars/dani.png" height=150 alt="Dani character image"></center>
           </div>
-          <div class="row-item right-itm">
+
+          <div class="col col-md-4">
             <h4 id="quiz-heading">Which milk can I drink?</h4>
             <span id="allergy-statement">My allergy: <strong>Dairy</strong></span>
           </div>
         </div>
       </div>
 
-      <div id="squares-container">
-        <div class="row">
+      <!-- Squares container -->
+        <div class="container px-1">
+          <div class="row justify-content-center">
+            <!--top left square-->
+            <div class="square col col-md-3 m-1" onclick="selectChoice(this)" style="background-image: url('../../sprites/dairy/chocmilk.png')" alt="chocolate dairy milk">
+            </div>
 
-          <!--top left square-->
-          <div class="square" onclick="selectChoice(this)">
-            <div class="content">
-              <img src="../../sprites/dairy/chocmilk.png" height="100%" alt="chocolate dairy milk">
+            <!--top right square-->
+            <div class="square col col-md-3 m-1 ct" onclick="selectChoice(this)" style="background-image: url('../../sprites/dairy/almondmilk.png')" alt="almond milk">
             </div>
           </div>
 
-          <!--top right square-->
-          <div class="square ct" onclick="selectChoice(this)">
-            <div class="content">
-              <img src="../../sprites/dairy/almondmilk.png" height="100%" alt="almond milk">
+          <div class="row justify-content-center">
+            <!--bottom left square-->
+            <div class="square col col-md-3 m-1" onclick="selectChoice(this)" style="background-image: url('../../sprites/dairy/strawberrymilk.png')" alt="strawberry dairy milk">
+            </div>
+
+            <!--bottom right square-->
+            <div class="square col col-md-3 m-1" onclick="selectChoice(this)" style="background-image: url('../../sprites/dairy/dairymilk.png')" alt="plain dairy milk">
             </div>
           </div>
+          <!--end squares' container-->
         </div>
 
-        <div class="row">
-          <!--bottom left square-->
-          <div class="square" onclick="selectChoice(this)">
-            <div class="content">
-              <img src="../../sprites/dairy/strawberrymilk.png" height="100%" alt="strawberry dairy milk">
-            </div>
-          </div>
-
-          <!--bottom right square-->
-          <div class="square" onclick="selectChoice(this)">
-            <div class="content">
-              <img src="../../sprites/dairy/dairymilk.png" height="100%" alt="plain dairy milk">
-            </div>
-          </div>
-        </div>
-      <!--end squares' container-->
-      </div>
-
-      <button id="quiz-action-btn" onclick="quizProgression()"></button>
+      <center><button id="quiz-action-btn" onclick="quizProgression()"></button></center>
 
     </div>
 

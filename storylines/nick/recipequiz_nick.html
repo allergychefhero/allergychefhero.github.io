@@ -1,74 +1,68 @@
 <html>
   <head>
-      <!--Page title and thumbnail-->
-      <title>Allergy Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Page title and thumbnail-->
+    <title>Allergy Game</title>
 
-      <!--Customizations-->
-      <link href="../../css/recipequiz.css" rel="stylesheet">
+    <!--Customizations-->
+    <link href="../../css/recipequiz.css" rel="stylesheet">
 
-      <!--JavaScript links-->
-      <script src="../../js/recipequiz.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--JavaScript links-->
+    <script src="../../js/recipequiz.js"></script>
   </head>
 
   <body style="background-color:#DFFFE0" onload="getHeading()">
 
     <span id="name" class="nick"></span>
 
-    <div id="container">
-
+    <!-- Body container -->
+    <div class="container mt-md-3">
       <!--back button-->
       <a href="infoscreen_nick.html" class="back-btn">←</a>
 
-      <div id="quiz-header">
-
-        <div class="row">
-          <div class="row-item left-itm">
-            <img id="char-img" src="../../chars/nick.png" alt="Nick's character image" style="min-height:150px;">
+      <!-- Heading container -->
+      <div class="container">
+        <div class="row justify-content-center mb-2">
+          <div class="col col-md-2">
+            <center><img id="char-img" height=150 src="../../chars/nick.png" alt="Nick's character image" style="min-height:150px;"></center>
           </div>
-          <div class="row-item right-itm">
+
+          <div class="col col-md-4">
             <h4 id="quiz-heading">Which topping can I eat?</h4>
             <span id="allergy-statement">My allergy: <strong>nuts</strong></span>
           </div>
         </div>
       </div>
 
-      <div id="squares-container">
-        <div class="row">
+      <!-- Squares container -->
+      <div class="container px-1">
+        <div class="row justify-content-center">
 
           <!--top left square-->
-          <div class="square" onclick="selectChoice(this)">
-            <div class="content">
-              <img src="../../sprites/nuts/chocolate.PNG" alt="chocolate with nuts" style="max-height:100%; max-width:100%;">
-            </div>
+          <div class="square col col-md-3 m-1 ct" onclick="selectChoice(this)" style="background-image: url('../../sprites/nuts/chocolate.PNG')" alt="chocolate with nuts">
           </div>
 
           <!--top right square-->
-          <div class="square" onclick="selectChoice(this)">
-            <div class="content">
-              <img src="../../sprites/nuts/pistachio.PNG" alt="Crab" style="max-height:100%; max-width:100%;">
-            </div>
+          <div class="square col col-md-3 m-1" onclick="selectChoice(this)" style="background-image: url('../../sprites/nuts/pistachio.PNG')" alt="Crab">
           </div>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
           <!--bottom left square-->
-          <div class="square ct" onclick="selectChoice(this)">
-            <div class="content">
-              <img src="../../sprites/nuts/nutfree_candy.gif" alt="gummy bears" style="max-height:100%; max-width:100%; margin-top: auto; margin-bottom: auto;">
-            </div>
+          <div class="square col col-md-3 m-1 ct" onclick="selectChoice(this)" style="background-image: url('../../sprites/nuts/nutfree_candy.gif')" alt="gummy bears">
           </div>
 
           <!--bottom right square-->
-          <div class="square" onclick="selectChoice(this)">
-            <div class="content">
-              <img src="../../sprites/nuts/almonds.gif" alt="almonds" style="max-height:100%; max-width:100%;">
-            </div>
+          <div class="square col col-md-3 m-1" onclick="selectChoice(this)" style="background-image: url('../../sprites/nuts/almonds.gif')" alt="almonds">
           </div>
-        </div>
-      <!--end squares' container-->
       </div>
+    <!--end squares' container-->
+    </div>
 
-      <button id="quiz-action-btn" onclick="quizProgression()"></button>
+      <center><button id="quiz-action-btn" onclick="quizProgression()"></button></center>
 
     </div>
 

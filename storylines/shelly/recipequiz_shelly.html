@@ -19,9 +19,9 @@
     <span id="name" class="shelly"></span>
 
     <!-- Body container -->
-    <div class="container">
+    <div class="container mt-md-3">
       <!--back button-->
-      <a href="infoscreen_shelly.html" class="back-btn">←</a>
+        <a href="infoscreen_shelly.html" class="back-btn">←</a>
 
       <!-- Heading container -->
       <div class="container">
@@ -29,6 +29,7 @@
           <div class="col col-md-2">
             <center><img id="char-img" src="../../chars/shelly.png" height=150 alt="Shelly's character image"></center>
           </div>
+
           <div class="col col-md-4">
             <h4 id="quiz-heading">Which seafood can I eat?</h4>
             <span id="allergy-statement">My allergy: <strong>shellfish</strong></span>
@@ -58,8 +59,10 @@
             <div class="square col col-md-3 m-1" onclick="selectChoice(this)" style="background-image: url('../../sprites/seafoods/shell_2.gif')" alt="Clams">
             </div>
           </div>
+        <!--end squares' container-->
         </div>
-      <button id="quiz-action-btn" onclick="quizProgression()"></button>
+
+      <center><button id="quiz-action-btn" onclick="quizProgression()"></button></center>
 
     </div>
 

@@ -6,6 +6,11 @@ body{
   margin: 0 0;
 }
 
+a{
+  text-decoration:none !important;
+  color: inherit !important;
+}
+
 #name{
   font-style: bold;
   text-align: center;

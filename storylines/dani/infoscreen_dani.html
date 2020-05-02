@@ -1,9 +1,15 @@
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="../../css/infoscreen.css">
-<meta charset="utf-8">
-<title>Meet Dani!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="../../css/infoscreen.css">
+
+  <meta charset="utf-8">
+  <title>Meet Dani!</title>
+
 </head>
 
 <body style="background-color: #C4ECED;">
@@ -15,7 +21,7 @@
     <div>
         <h1 id="name">Dani</h1>
         <img src="../../chars/dani.png" class="center" alt="Picture of Dani" width="100" />
-        <p>
+        <p class="mt-2">
           I have a <big>dairy</big> allergy<br>
         </p>
 
@@ -28,34 +34,36 @@
     </div>
 
     <div class="row">
-        <div class="row-item">
-            <img class="center" src="../../sprites/dairy/dairymilk.png" alt="Dairy Milk" height="100"/>
-            <p>Milk</p>
-        </div>
+      <div class="col-4 mt-3">
+        <img class="center" src="../../sprites/dairy/dairymilk.png" alt="Dairy Milk" height="100"/>
+        <p>Milk</p>
+      </div>
 
-        <div class="row-item">
-            <img class="center" src="../../sprites/dairy/cheese.png" alt="Cheese" height="100"/>
-            <p>Cheese</p>
-        </div>
+      <div class="col-4 mt-3">
+        <img class="center" src="../../sprites/dairy/cheese.png" alt="Cheese" height="100"/>
+        <p>Cheese</p>
+      </div>
 
-        <div class="row-item">
-            <img class="center" src="../../sprites/dairy/yogurt.png" alt="Yogurt" height="100"/>
-            <p>Yogurt</p>
-        </div>
+      <div class="col-4 mt-3">
+        <img class="center" src="../../sprites/dairy/yogurt.png" alt="Yogurt" height="100"/>
+        <p>Yogurt</p>
+      </div>
     </div>
 
-    <div style="margin-top:20px;">
-        <p>
-          I <big style="color:#339D2E">can</big> drink:<br>
-          <img class="center" src="../../sprites/dairy/almondmilk.png" alt="Almond Milk" width="100" />
-          Almond Milk
-        </p>
+    <div class="mt-3">
+      <p>
+        I <big style="color:#339D2E">can</big> drink:<br>
+        <img class="center mt-2" src="../../sprites/dairy/almondmilk.png" alt="Almond Milk" width="100" />
+        Almond Milk
+      </p>
+    </div>
 
+    <div class="mt-3">
+      <p style="line-height:35px;">
+        Let's cook <big>pancakes</big>!
         <br>
-
-        <p>
-          Let's cook <big>pancakes</big>! <a href="recipequiz_dani.html" class="next round">&#62;</a>
-        </p>
+        <a href="recipequiz_dani.html" class=" mt-2 next round">&#62;</a>
+      </p>
     </div>
 
   </div>

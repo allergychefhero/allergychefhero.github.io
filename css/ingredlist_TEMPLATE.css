@@ -5,7 +5,7 @@ body{
   color: #070707;
 }
 
-p { 
+p {
   padding: 0;
   margin: 0;
 }
@@ -26,7 +26,7 @@ p {
 /*Quiz header container (not text)*/
 #quiz-header{
   font-size: 20px;
-  width: 65%; 
+  width: 65%;
   overflow: hidden;
   vertical-align: middle;
   margin: 0 auto;
@@ -66,35 +66,35 @@ p {
 
 .row-item {
   position: relative;
-  padding: 10px 25px; 
-  height: 100%; 
+  padding: 10px 25px;
+  height: 100%;
   position: right;
 }
 
 .row {
   display: flex;
-  width: 100%; 
-} 
+  width: 100%;
+}
 
-.column { 
+.column {
   height: 150px;
 }
 
 .rec {
   position: relative;
-  width: 100%; 
+  width: 100%;
   margin: 10px 0;
   background-color: #ffffff;
   border: solid #000000 1px;
   border-radius: 8px;
 }
 
-.rec:after { 
+.rec:after {
   display: block;
   padding-bottom: 100%;
 }
 
-.center-content { 
+.center-content {
   justify-content: center;
   padding: 2em 0 2em 0;
 }
@@ -104,21 +104,21 @@ p {
   width: 100%;
 }
 
-.lg-width { 
-  width: 90%; 
+.lg-width {
+  width: 90%;
   text-align: left;
 }
 
-.sm-width { 
-	width: 10%; 
+.sm-width {
+	width: 10%;
 }
 
-.row-item .sm-width { 
+.row-item .sm-width {
 	justify-content: center;
 }
 
 .checkbox-container {
-  display: inline-block; 
+  display: inline-block;
   position: relative ;
   /*padding-left: 35px;
   margin-bottom: 12px;*/
@@ -127,7 +127,7 @@ p {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; 
+  user-select: none;
 }
 
 .checkbox-container input {
@@ -144,7 +144,7 @@ p {
   left: 0;
   height: 40px;
   width: 40px;
-  background-color: rgb(238, 238, 238); 
+  background-color: rgb(238, 238, 238);
 	text-align: center
 }
 
@@ -167,8 +167,8 @@ p {
 
 /* Show the checkmark when checked */
 .checkbox-container input:checked ~ .checkmark:after {
-  display: inline-block; 
-  margin-left: 4px; 
+  display: inline-block;
+  margin-left: 4px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -186,21 +186,8 @@ p {
   transform: rotate(45deg);
 }
 
-.checkbox:after { 
-  content: " "; 
-  display: block; 
-  clear: both; 
+.checkbox:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
