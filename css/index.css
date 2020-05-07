@@ -1,0 +1,53 @@
+body{
+  background-color: #FFFDCC;
+  font-size: 30px;
+  font-family: "Comic Sans MS";
+  color: #070707;
+}
+
+#heading{
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.container{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.row-item{
+  border-bottom: solid TRANSPARENT 5px;
+  border-top: solid TRANSPARENT 5px;
+}
+
+#start-game{
+  margin-top: 10px;
+  font-size: inherit;
+  background-color: #ccc;
+  border: #707070 1px solid;
+  font-family: inherit;
+}
+
+#food-desc, #speech-bubble{
+  padding: 10px;
+  margin: 20px 0;
+}
+
+#food-desc{
+  display: none;
+}
+
+/* sm col size and below */
+@media (max-width: 767.98px) {
+  .container{
+    width: 100%;
+  }
+}
+
+/* md col size +1px [to make ipad vertical size takeon sm layout] and above */
+@media (min-width: 769px) {
+  .container{
+    max-width: 50%;
+  }
+}
