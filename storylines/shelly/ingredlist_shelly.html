@@ -1,157 +1,107 @@
 <html>
-  <head>
-      <!--Page title and thumbnail-->
-      <title>Allergy Game</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-      <!--Customizations-->
-      <link href="../../css/ingredlist_TEMPLATE.css" rel="stylesheet">
+  <!--Page title and thumbnail-->
+  <title>Allergy Game</title>
 
-      <!--JavaScript links-->
-	  <script src="../../js/ingredlist_TEMPLATE.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	  <!-- Bootstrap core CSS -->
-	  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  </head>
+  <!--Customizations-->
+  <link href="../../css/ingredlist_TEMPLATE.css" rel="stylesheet">
 
-  <body style="background-color: #FFE5BA;">
-	  <span id="name" class="shelly"></span>
+  <!--JavaScript links-->
+  <script src="../../js/ingredlist_TEMPLATE.js"></script>
 
-    <div id="container">
-      <!--back button-->
-      <a href="recipequiz_nick.html" class="back-btn">←</a>
+</head>
 
-      <div class="row mt-5">
-				<div id="quiz-header">
-					<h4 id="heading-txt">Seafood Pasta</h4>
-					<div class="row center-content">
-						<div class="col-7">
-							<div class="column" style="width: 100%;">
-								<img src="../../sprites/seafoods/seafoodpasta.gif" class="char-img">
-							</div>
-						</div>
-						<div class="col-5">
-							<div class="column" style="width: 100%;">
-								<img src="../../sprites/seafoods/shellfishallergen.png" class="char-img">
-							</div>
-						</div>
-					</div>
-				</div>
+<body style="background-color: #FFE5BA;">
+  <span id="name" class="shelly"></span>
 
-		</div>
+  <div class="container pt-4">
+    <!--back button-->
+    <a href="recipequiz_shelly.html" class="back-btn">←</a>
 
-		<div class="row">
-			<div class="col-md-1">
-			</div>
-
-			<div class="col-md-10">
-				<div id="squares-container" style="padding-top: 10px;">
-					<!--top rec-->
-					<div class="rec">
-						<div class="row">
-							<div class="col-sm-7">
-								<div class="row-item lg-width">
-									<p>PASTA
-										<img src="../../sprites/seafoods/pasta.png" alt="pasta" style="max-height: 35px; padding: 0 0 0 0;">
-									</p>
-								</div>
-							</div>
-							<div class="col-sm-3"> </div>
-							<div class="col-sm-2">
-								<div class="row-item sm-width checkbox">
-									<label class="checkbox-container">
-										<input type="checkbox" onClick="validate()">
-										<span class="checkmark"></span>
-									</label>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-					<!--2nd rec-->
-					<div class="rec">
-						<div class="row">
-							<div class="col-sm-7">
-								<div class="row-item lg-width">
-									<!-- <div class="column" style="width: 100%; background-color: #cccccc;">
-										<p>SEAFOOD</p>
-									</div>
-									<div class="column" style="width: 100%; background-color: #cccccc;">
-										<img src="../../sprites/seafoods/fish.png" alt="fish" style="max-width: 10%;">
-									</div> -->
-									<p>SEAFOOD
-										<img src="../../sprites/seafoods/fish.gif" alt="fish" style="max-height: 35px; padding: 0 0 0 0;">
-									</p>
-								</div>
-							</div>
-							<div class="col-sm-3"> </div>
-							<div class="col-sm-2">
-								<div class="row-item sm-width checkbox">
-									<label class="checkbox-container">
-										<input type="checkbox" onClick="validate()">
-										<span class="checkmark"></span>
-									</label>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!--3rd rec-->
-					<div class="rec">
-						<div class="row">
-							<div class="col-sm-7">
-								<div class="row-item lg-width">
-									<p>BUTTER
-										<img src="../../sprites/seafoods/butter.png" alt="butter" style="max-height: 35px; padding: 0 0 0 0;">
-									</p>
-								</div>
-							</div>
-							<div class="col-sm-3"> </div>
-							<div class="col-sm-2">
-								<div class="row-item sm-width checkbox">
-									<label class="checkbox-container">
-										<input type="checkbox" onClick="validate()">
-										<span class="checkmark"></span>
-									</label>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!--bottom rec-->
-					<div class="rec">
-						<div class="row">
-							<div class="col-sm-7">
-								<div class="row-item lg-width">
-									<p>TOMATOES
-										<img src="../../sprites/seafoods/tomato.png" alt="tomatoes" style="max-height: 35px; padding: 0 0 0 0;">
-									</p>
-								</div>
-							</div>
-							<div class="col-sm-3"></div>
-							<div class="col-sm-2">
-								<div class="row-item sm-width">
-									<label class="checkbox-container">
-										<input type="checkbox" onClick="validate()">
-										<span class="checkmark"></span>
-									</label>
-								</div>
-							</div>
-						</div>
-					</div>
-				<!--end squares' container-->
-				</div>
-			</div>
-
-			<div class="col-md-1">
-			</div>
-
-		</div>
-
-      <center><button id="quiz-action-btn" onclick="next()">←</button></center>
-
+    <div id="quiz-header" class="mx-auto">
+      <h2 class="heading-txt">Seafood Pasta</h2>
+      <div class="row justify-content-center pt-4">
+        <div class="col-6 col-md-5 col-lg-4">
+          <img src="../../sprites/seafoods/seafoodpasta.gif" alt="Seafood Pasta" width="100%">
+        </div>
+        <div class="col-6 col-md-5 col-lg-4">
+          <img src="../../sprites/seafoods/shellfishallergen.png" alt="No Shellfish" width="100%">
+        </div>
+      </div>
     </div>
 
-  </body>
+
+    <div class="container custom-width pt-3">
+      <!--top rec-->
+      <label class="row checkbox-container rec">
+
+        <div class="col-9 col-sm-10">
+          PASTA
+          <img src="../../sprites/seafoods/pasta.png" alt="Pasta" style="max-height: 40px;">
+        </div>
+
+        <div class="col-3 col-sm-2 checkbox">
+          <input type="checkbox" onClick="validate()">
+          <span class="checkmark"></span>
+        </div>
+
+      </label>
+
+      <!--2nd rec-->
+      <label class="row checkbox-container rec">
+
+        <div class="col-9 col-sm-10">
+          SEAFOOD
+          <img src="../../sprites/seafoods/fish.png" alt="Fish" style="max-height: 40px;">
+        </div>
+
+        <div class="col-3 col-sm-2 checkbox">
+          <input type="checkbox" onClick="validate()">
+          <span class="checkmark"></span>
+        </div>
+
+      </label>
+
+      <!--3rd rec-->
+      <label class="row checkbox-container rec">
+
+        <div class="col-9 col-sm-10">
+          BUTTER
+          <img src="../../sprites/seafoods/butter.png" alt="Butter" style="max-height: 40px;">
+        </div>
+
+        <div class="col-3 col-sm-2 checkbox">
+          <input type="checkbox" onClick="validate()">
+          <span class="checkmark"></span>
+        </div>
+
+      </label>
+
+      <!--bottom rec-->
+      <label class="row checkbox-container rec">
+
+        <div class="col-9 col-sm-10">
+          TOMATOES
+          <img src="../../sprites/seafoods/tomato.png" alt="Whole tomato fruit and canned Tomatoes" style="max-height: 40px; padding: 0 0 0 0;">
+        </div>
+
+        <div class="col-3 col-sm-2 checkbox">
+          <input type="checkbox" onClick="validate()">
+          <span class="checkmark"></span>
+        </div>
+
+      </label>
+    </div>
+
+    <center><button id="quiz-action-btn" onclick="next()">←</button></center>
+
+  </div>
+
+</body>
 
 </html>

@@ -73,6 +73,7 @@ button{
   font-weight: bold;
   background-color: #FFFDCC;
   border: #707070 1px solid;
+  position: absolute;
   border-radius: 24px;
   font-family: inherit;
   padding: 0 10px;
