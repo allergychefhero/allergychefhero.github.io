@@ -18,9 +18,30 @@ p {
   text-align: right;
 }
 
+.back-btn{
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #FFFDCC;
+  border: #707070 1px solid;
+  border-radius: 24px;
+  font-family: inherit;
+  padding: 0 10px;
+  padding-bottom: 5px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* md col size and above */
+@media (min-width: 768px) {
+  .back-btn {
+    position:absolute;
+    margin-left: 26px;
+    margin-top: 9px;
+  }
+}
+
 #container{
   width: 100%;
-  text-align: center;
 }
 
 /*Quiz header container (not text)*/
@@ -30,6 +51,7 @@ p {
   overflow: hidden;
   vertical-align: middle;
   margin: 0 auto;
+  text-align: center;
 }
 
 .char-img{

@@ -1,116 +1,120 @@
 <html>
-  <head>
-      <!--Page title and thumbnail-->
-      <title>Allergy Game</title>
+<head>
+  <!--Page title and thumbnail-->
+  <title>Allergy Game</title>
 
-      <!--Customizations-->
-      <link href="../../css/ingredlist_TEMPLATE.css" rel="stylesheet">
+  <!--Customizations-->
+  <link href="../../css/ingredlist_TEMPLATE.css" rel="stylesheet">
 
-      <!--JavaScript links-->
-      <script src="../../js/ingredlist_TEMPLATE.js"></script>
-  </head>
+  <!--JavaScript links-->
+  <script src="../../js/ingredlist_TEMPLATE.js"></script>
+</head>
 
-  <body>
-	<span id="name" class="dani"></span>
+<body>
+  <span id="name" class="dani"></span>
 
-    <div id="container">
-      <div id="quiz-header">
-		  <h4 id="heading-txt">Ice Cream Sundae</h4>
-        <div class="row center-content">
-		  <div class="column" style="width: 100%;">
-			<!-- img 1 --> 
-            <img src="../../sprites/sundae.png" class="char-img"> 
-          </div>
-		  <div class="column" style="width: 100%;"> 
-			<!-- img 2 --> 
-            <img src="../../sprites/nuts/nutallergen.png" class="char-img"> 
-          </div>
+  <div id="container">
+    <!--back button-->
+    <a href="recipequiz_dani.html" class="back-btn">←</a>
+
+    <div id="quiz-header">
+      <h4 id="heading-txt">Ice Cream Sundae</h4>
+      <div class="row center-content">
+        <div class="column" style="width: 100%;">
+          <!-- img 1 -->
+          <img src="../../sprites/sundae.png" class="char-img">
         </div>
-	  </div>
-	  
-
-      <div id="squares-container" style="padding-top: 10px;">
-          <!--top rec-->
-          <div class="rec"> 
-			<div class="row"> 
-				<div class="row-item lg-width"> 
-					<p>ICE CREAM
-						<img src="../../sprites/nuts/ice_cream.PNG" alt="ice cream" style="max-height: 35px; padding: 0 0 0 0;">
-					</p> 
-				</div>
-				<div class="row-item sm-width checkbox"> 
-					<label class="checkbox-container">
-						<input type="checkbox" onClick="validate()">
-						<span class="checkmark"></span>
-					</label> 
-				</div>
-			</div> 
-          </div> 
-
-          <!--2nd rec-->
-          <div class="rec"> 
-			<div class="row"> 
-				<div class="row-item lg-width"> 
-					<!-- <div class="column" style="width: 100%; background-color: #cccccc;"> 
-						<p>SEAFOOD</p> 
-					</div>
-					<div class="column" style="width: 100%; background-color: #cccccc;"> 
-						<img src="../../sprites/seafoods/fish.png" alt="fish" style="max-width: 10%;"> 
-					</div> --> 
-					<p>TOPPINGS 
-						<img src="../../sprites/nuts/nutfree_candy.png" alt="gummy bears" style="max-height: 35px; padding: 0 0 0 0;"> 
-					</p> 
-					
-				</div>
-				<div class="row-item sm-width checkbox"> 
-					<label class="checkbox-container">
-						<input type="checkbox" onClick="validate()">
-						<span class="checkmark"></span>
-					</label> 
-				</div>
-			</div> 
-          </div>
-
-          <!--3rd rec-->
-          <div class="rec"> 
-			<div class="row"> 
-				<div class="row-item lg-width"> 
-					<p>CHOCOLATE SYRUP
-						<img src="../../sprites/nuts/choc_syrup.PNG" alt="chocolate syrup" style="max-height: 35px; padding: 0 0 0 0;">
-					</p> 
-				</div>
-				<div class="row-item sm-width checkbox"> 
-					<label class="checkbox-container">
-						<input type="checkbox" onClick="validate()">
-						<span class="checkmark"></span>
-					</label> 
-				</div>
-			</div> 
-          </div>
-
-          <!--bottom rec-->
-          <div class="rec"> 
-			<div class="row"> 
-				<div class="row-item lg-width"> 
-					<p>BANANA
-						<img src="../../sprites/nuts/banana.png" alt="banana" style="max-height: 35px; padding: 0 0 0 0;">
-					</p> 
-				</div>
-				<div class="row-item sm-width"> 
-					<label class="checkbox-container">
-						<input type="checkbox" onClick="validate()">
-						<span class="checkmark"></span>
-					</label> 
-				</div>
-			</div> 
-          </div>
-      <!--end squares' container-->
+        <div class="column" style="width: 100%;">
+          <!-- img 2 -->
+          <img src="../../sprites/nuts/nutallergen.png" class="char-img">
+        </div>
       </div>
-
-      <button id="quiz-action-btn" onclick="next()">←</button>
-
     </div>
 
-  </body>
+
+    <div id="squares-container" style="padding-top: 10px;">
+      <!--top rec-->
+      <div class="rec">
+        <div class="row">
+          <div class="row-item lg-width">
+            <p>
+              ICE CREAM
+              <img src="../../sprites/nuts/ice_cream.PNG" alt="ice cream" style="max-height: 35px; padding: 0 0 0 0;">
+            </p>
+          </div>
+          <div class="row-item sm-width checkbox">
+            <label class="checkbox-container">
+              <input type="checkbox" onClick="validate()">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!--2nd rec-->
+      <div class="rec">
+        <div class="row">
+          <div class="row-item lg-width">
+            <!-- <div class="column" style="width: 100%; background-color: #cccccc;">
+            <p>SEAFOOD</p>
+          </div>
+          <div class="column" style="width: 100%; background-color: #cccccc;">
+          <img src="../../sprites/seafoods/fish.png" alt="fish" style="max-width: 10%;">
+        </div> -->
+        <p>TOPPINGS
+          <img src="../../sprites/nuts/nutfree_candy.png" alt="gummy bears" style="max-height: 35px; padding: 0 0 0 0;">
+        </p>
+
+      </div>
+      <div class="row-item sm-width checkbox">
+        <label class="checkbox-container">
+          <input type="checkbox" onClick="validate()">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!--3rd rec-->
+  <div class="rec">
+    <div class="row">
+      <div class="row-item lg-width">
+        <p>CHOCOLATE SYRUP
+          <img src="../../sprites/nuts/choc_syrup.PNG" alt="chocolate syrup" style="max-height: 35px; padding: 0 0 0 0;">
+        </p>
+      </div>
+      <div class="row-item sm-width checkbox">
+        <label class="checkbox-container">
+          <input type="checkbox" onClick="validate()">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!--bottom rec-->
+  <div class="rec">
+    <div class="row">
+      <div class="row-item lg-width">
+        <p>BANANA
+          <img src="../../sprites/nuts/banana.png" alt="banana" style="max-height: 35px; padding: 0 0 0 0;">
+        </p>
+      </div>
+      <div class="row-item sm-width">
+        <label class="checkbox-container">
+          <input type="checkbox" onClick="validate()">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end squares' container-->
+</div>
+
+<center><button id="quiz-action-btn" onclick="next()">←</button></center>
+
+</div>
+
+</body>
 
 </html>
