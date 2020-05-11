@@ -1,76 +1,75 @@
 <html>
 <head>
   <!--Page title and thumbnail-->
-  <title>Allergy Game</title>
+  <title>About Allergy Chef Hero</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!--Customizations-->
-  <link href="css/index.css" rel="stylesheet">
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!--JavaScript links-->
-  <script src="js/index.js"></script>
+  <!--Customizations-->
+  <link href="css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
-
-  <div class="container">
-
-    <h3 id="heading">Pick a Buddy</h3>
-    <div id="speech-bubble">Let's make food!</div>
-
-    <div class="row mx-1">
-      <!--char image-->
-      <div class="col-4 row-item shelly" onclick="charSelect(this)">
-        <!--char image-->
-        <div class="row pt-2">
-          <img class="col" src="chars/shelly.png">
-        </div>
-        <br>
-        <!--allergen-->
-        <div class="row pb-2">
-          <img class="col allergen" src="sprites/seafoods/shellfishallergen.png">
-        </div>
+  <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand" href="index.html">Allergy Chef Hero</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link active" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="startgame.html">Play Game</a>
+        <a class="nav-item nav-link" href="about.html">About</a>
+        <a class="nav-item nav-link" href="credits.html">Credits</a>
       </div>
+    </div>
+  </nav>
 
+  <div class="container mt-3">
+    <div class="row pt-4 pt-md-2">
 
-      <div class="col-4 row-item nick" onclick="charSelect(this)">
-        <!--char image-->
-        <div class="row pt-2">
-          <img class="col ml-n2" src="chars/nick_index.png">
-        </div>
-        <br>
-        <!--allergen-->
-        <div class="row pb-2">
-          <img class="col allergen" src="sprites/nuts/nutallergen.png">
-        </div>
+      <!-- Play Button -->
+      <div class="col-10 col-md-6 col-xl-5 mx-auto">
+        <a href="startgame.html">
+          <img src="sprites/play.png" width="100%">
+        </a>
+          <br>
+        <a class="alt-styling" href="startgame.html">
+          <h3 class="mt-3">Play Game</h3>
+        </a>
       </div>
-
-      <div class="col-4 row-item dani" onclick="charSelect(this)">
-        <!--char image-->
-        <div class="row pt-2">
-          <img class="col" src="chars/dani.png">
-        </div>
-        <br>
-        <!--allergen-->
-        <div class="row pb-2">
-          <img class="col allergen" src="sprites/dairy/dairyallergen.png">
-        </div>
-
-      </div>
-
-      <!--end row-->
     </div>
 
-    <div id="food-desc">Desc</div>
+    <div class="row mt-4 justify-content-center">
 
-    <button id="start-game" onclick="startGame()" disabled>Let's Go!</button>
+      <!-- About Button: SHOWS on SM and smaller SIZE SCREENs -->
+      <div class="col-6 col-md-4">
+        <a class="alt-styling" href="about.html">
+        <div class="square">
+          <h5>About the Game and Team</h5>
+        </div>
+        </a>
+      </div>
 
+      <!-- Credits Button -->
+      <div class="col-6 col-md-4">
+        <a class="alt-styling" href="startgame.html">
+        <div class="square">
+          <h5>Photo and Icon Credits</h5>
+        </div>
+        </a>
+      </div>
+
+    </div>
   </div>
 
 </body>
-
 </html>

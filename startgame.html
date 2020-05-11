@@ -1,0 +1,94 @@
+<html>
+<head>
+  <!--Page title and thumbnail-->
+  <title>Allergy Game</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!--Customizations-->
+  <link href="css/startgame.css" rel="stylesheet">
+
+  <!--JavaScript links-->
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand" href="index.html">Allergy Chef Hero</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link active" href="startgame.html">Play Game</a>
+        <a class="nav-item nav-link" href="about.html">About</a>
+        <a class="nav-item nav-link" href="credits.html">Credits</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+
+    <h3 id="heading">Pick a Buddy</h3>
+    <div id="speech-bubble">Let's make food!</div>
+
+    <div class="row mx-1">
+      <!--char image-->
+      <div class="col-4 row-item shelly" onclick="charSelect(this)">
+        <!--char image-->
+        <div class="row pt-2">
+          <img class="col" src="chars/shelly.png">
+        </div>
+        <br>
+        <!--allergen-->
+        <div class="row pb-2">
+          <img class="col allergen" src="sprites/seafoods/shellfishallergen.png">
+        </div>
+      </div>
+
+
+      <div class="col-4 row-item nick" onclick="charSelect(this)">
+        <!--char image-->
+        <div class="row pt-2">
+          <img class="col ml-n2" src="chars/nick_index.png">
+        </div>
+        <br>
+        <!--allergen-->
+        <div class="row pb-2">
+          <img class="col allergen" src="sprites/nuts/nutallergen.png">
+        </div>
+      </div>
+
+      <div class="col-4 row-item dani" onclick="charSelect(this)">
+        <!--char image-->
+        <div class="row pt-2">
+          <img class="col" src="chars/dani.png">
+        </div>
+        <br>
+        <!--allergen-->
+        <div class="row pb-2">
+          <img class="col allergen" src="sprites/dairy/dairyallergen.png">
+        </div>
+
+      </div>
+
+      <!--end row-->
+    </div>
+
+    <div id="food-desc">Desc</div>
+
+    <button id="start-game" onclick="startGame()" disabled>Let's Go!</button>
+
+  </div>
+
+</body>
+
+</html>

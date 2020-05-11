@@ -1,8 +1,17 @@
 body{
   background-color: #FFFDCC;
-  font-size: 30px;
+  font-size: 17px;
   font-family: "Comic Sans MS";
   color: #070707;
+}
+
+.navbar{
+  background-color: rgba(255, 255, 255, .9);
+  /*border-bottom: 1px solid #000";*/
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
 }
 
 #heading{
@@ -12,6 +21,7 @@ body{
 }
 
 .container{
+  font-size: 30px;
   text-align: center;
   margin: 0 auto;
 }

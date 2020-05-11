@@ -1,7 +1,16 @@
 body{
   background-color: #FFFDCC;
+  font-size: 17px;
   font-family: "Comic Sans MS";
   color: #070707;
+}
+
+a, a:hover, a:active{
+  color: #957529;
+}
+
+a:active{
+  text-decoration: none;
 }
 
 .container{
@@ -17,7 +26,18 @@ body{
     border: none;
 }
 
-h3{
+.nav-link{
+  padding-right: 10px;
+}
+
+.square{
+  background-color: rgba(255, 255, 255, .9);
+  padding: 6px;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+.alt-styling, .alt-styling:hover{
   text-align: center;
-  text-decoration: underline;
+  color: #000;
 }
