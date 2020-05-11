@@ -5,19 +5,6 @@ body{
   color: #070707;
 }
 
-p {
-  padding: 0;
-  margin: 0;
-}
-
-.right-itm{
-  text-align: left;
-}
-
-.left-itm{
-  text-align: right;
-}
-
 .back-btn{
   font-size: 25px;
   font-weight: bold;
@@ -38,31 +25,19 @@ p {
     margin-left: 26px;
     margin-top: 9px;
   }
-}
-
-#container{
-  width: 100%;
+  .custom-width{
+    width:75%;
+  }
 }
 
 /*Quiz header container (not text)*/
 #quiz-header{
-  font-size: 20px;
   width: 65%;
-  overflow: hidden;
-  vertical-align: middle;
-  margin: 0 auto;
   text-align: center;
 }
 
-.char-img{
-  max-height:100%;
-}
-
 /* Quiz heading text*/
-#heading-txt{
-  font-size: 30px;
-  line-height: 1.2em;
-  margin: 0 0 7px 0;
+.heading-txt{
   text-decoration: underline;
 }
 
@@ -79,95 +54,30 @@ p {
   display: none;
 }
 
-#squares-container{
-  text-align: center;
-  width: 65%;
-  margin: 0 auto;
-
-}
-
-.row-item {
-  position: relative;
-  padding: 10px 25px;
-  height: 100%;
-  position: right;
-}
-
-.row {
-  display: flex;
-  width: 100%;
-}
-
-.column {
-  height: 150px;
-}
-
 .rec {
-  position: relative;
-  width: 100%;
-  margin: 10px 0;
   background-color: #ffffff;
   border: solid #000000 1px;
   border-radius: 8px;
+  padding: 13px 0;
+  margin-bottom: 10px;
 }
 
-.rec:after {
-  display: block;
-  padding-bottom: 100%;
-}
-
-.center-content {
-  justify-content: center;
-  padding: 2em 0 2em 0;
-}
-
-.content {
-  position: absolute;
-  width: 100%;
-}
-
-.lg-width {
-  width: 90%;
-  text-align: left;
-}
-
-.sm-width {
-	width: 10%;
-}
-
-.row-item .sm-width {
-	justify-content: center;
-}
 
 .checkbox-container {
-  display: inline-block;
-  position: relative ;
-  /*padding-left: 35px;
-  margin-bottom: 12px;*/
   cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .checkbox-container input {
-  position: absolute;
   opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
 }
 
 .checkmark {
   position: absolute;
-  top: 0;
-  left: 0;
   height: 40px;
   width: 40px;
+  right: 10px;
   background-color: rgb(238, 238, 238);
-	text-align: center
+	text-align: center;
 }
 
 /* On mouse-over, add a grey background color */
@@ -208,8 +118,8 @@ p {
   transform: rotate(45deg);
 }
 
-.checkbox:after {
+/*.checkbox:after {
   content: " ";
   display: block;
   clear: both;
-}
+}*/

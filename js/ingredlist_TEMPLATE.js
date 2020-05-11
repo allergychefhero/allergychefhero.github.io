@@ -2,17 +2,17 @@
     let choiceSelected;
 
 
-function validate() { 
+function validate() {
 	document.getElementById('quiz-action-btn').style.display="none";
-	var checked = 0; 
-	var chks = document.getElementsByTagName("INPUT"); 
+	var checked = 0;
+	var chks = document.getElementsByTagName("INPUT");
 	for (var i = 0; i < chks.length; i++) {
-		if (chks[i].checked) { 
-			checked++; 
-		} 
+		if (chks[i].checked) {
+			checked++;
+		}
 	}
-	if(checked==chks.length) { 
-		nextPage(); 
+	if(checked==chks.length) {
+		nextPage();
 	}
 }
 
@@ -22,8 +22,7 @@ function nextPage() {
 	document.getElementById('quiz-action-btn').style.backgroundColor = "#B9FD9C";
 }
 
-function next() { 
+function next() {
   next_page_str ='thankyou_'.concat(document.getElementById('name').className,'.html');
-  location.replace(next_page_str); 
+  location.replace(next_page_str);
 }
-
