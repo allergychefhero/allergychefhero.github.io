@@ -5,8 +5,7 @@ what they are, as well as reduce the possible negative stigma surrounding allerg
 
 To run the application, start with opening the index.html file in a web browser. 
 
-The ingredlist_TEMPLATE.html and recipequiz_TEMPLATE.html pages are simply template pages. The 4 main "types" of pages are the 
-index page, information page (about the allergy), recipe quiz page, ingredient list page, and the thank you page (for when the 
+The ingredlist_TEMPLATE.html and recipequiz_TEMPLATE.html pages are simply template pages. The 4 main "types" of pages are the index page, information page (about the allergy), recipe quiz page, ingredient list page, and the thank you page (for when the 
 dishes have been prepared). 
 
 There are 3 characters created (their images in the "char" directory), each with their own storyline. Each storyline has its  
