@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body{
+  font-family: "Balsamiq Sans";
   background-color: #FFE5BA;
   font-size: 25px;
-  font-family: "Comic Sans MS";
   color: #070707;
 }
 
@@ -13,7 +15,7 @@ body{
   border-radius: 24px;
   font-family: inherit;
   padding: 0 10px;
-  padding-bottom: 5px;
+  padding-top: 4px;
   color: #000;
   text-decoration: none;
 }

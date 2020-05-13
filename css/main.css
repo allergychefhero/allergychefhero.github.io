@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body{
+  font-family: "Balsamiq Sans";
   background-color: #FFFDCC;
   font-size: 17px;
-  font-family: "Comic Sans MS";
   color: #070707;
 }
 
