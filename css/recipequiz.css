@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "fonts.css";
 
 body{
-  font-family: "Balsamiq Sans" !important;
-  font-size: 25px !important;
+  font-size: 25px;
   color: #070707;
 }
 
 a{
   text-decoration:none !important;
   color: inherit !important;
+}
+
+.container{
+  margin-top: 7px;
 }
 
 /* Quiz heading text*/

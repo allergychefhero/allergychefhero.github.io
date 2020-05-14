@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "fonts.css";
 
 body{
-  font-family: "Balsamiq Sans";
   background-color: #FFFDCC;
-  font-size: 17px;
+  font-size: 20px;
   color: #070707;
 }
 
@@ -34,7 +33,7 @@ a:active{
 
 .square{
   background-color: rgba(255, 255, 255, .9);
-  padding: 6px;
+  padding: 8px 3px 0px 3px;
   border: 1px solid #000;
   border-radius: 8px;
 }
