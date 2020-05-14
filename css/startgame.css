@@ -51,11 +51,6 @@ body{
   display: none;
 }
 
-/*height of char images*/
-.custom-height{
-  height: 275px;
-}
-
 /* sm screen/col size +1 and below */
 @media (max-width: 768.98px) {
   .container{
