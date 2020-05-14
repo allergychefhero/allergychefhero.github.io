@@ -51,14 +51,19 @@ body{
   display: none;
 }
 
-/* sm col size and below */
-@media (max-width: 767.98px) {
+/*height of char images*/
+.custom-height{
+  height: 275px;
+}
+
+/* sm screen/col size +1 and below */
+@media (max-width: 768.98px) {
   .container{
     width: 100%;
   }
 }
 
-/* md col size +1px [to make ipad vertical size takeon sm layout] and above */
+/* md screen/col size +1px [to make ipad vertical size takeon sm layout] and above */
 @media (min-width: 769px) {
   .container{
     max-width: 50%;
